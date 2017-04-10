@@ -28,11 +28,12 @@
 
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-    //NSLog(@"%@",response);
+    NSLog(@"%@",response);
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
+    //接受数据
     [self.reviceData appendData:data];  
 }
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
